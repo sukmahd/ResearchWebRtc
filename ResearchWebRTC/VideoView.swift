@@ -15,7 +15,7 @@ struct VideoView: UIViewRepresentable {
     //RTCNSGLVideoView
     //RTCMTLNSVideoView
     func makeUIView(context: Context) -> RTCMTLVideoView {
-        let view = RTCMTLVideoView(frame: .zero)
+        let view = RTCMTLVideoView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         view.videoContentMode = .scaleAspectFit
         return view
     }
